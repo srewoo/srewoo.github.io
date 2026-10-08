@@ -1,0 +1,104 @@
+/*
+ * External stylesheet, because the extension CSP is `style-src 'self'` and an inline <style> block on an
+ * extension page is dropped silently. Tokens match the panel so help does not look like a different product.
+ */
+:root {
+  color-scheme: light dark;
+  --paper: #fff; --sunk: #fafaf9; --ink: #17191c; --ink-2: #5c6167; --ink-3: #7c8189;
+  --rule: #e9e8e5; --rule-2: #d8d7d3; --ref: #2f63c0; --amber: #8a5606;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #141416; --sunk: #191a1c; --ink: #ecebe9; --ink-2: #a5a9ae; --ink-3: #868a90;
+    --rule: #26262a; --rule-2: #35353a; --ref: #7ea6ee; --amber: #e0a54a;
+  }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font: 15px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: var(--paper); color: var(--ink);
+  max-width: 48rem; margin: 0 auto; padding: 3rem 1.5rem 6rem;
+}
+header { margin-bottom: 2rem; }
+.mark { font-family: var(--mono); font-size: 13px; color: var(--ink-3); }
+h1 { font-size: 26px; font-weight: 500; letter-spacing: -0.02em; margin-top: 0.75rem; }
+.sub { color: var(--ink-2); margin-top: 0.4rem; font-size: 13px; }
+
+nav {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+  padding: 1rem 0; border-block: 1px solid var(--rule); margin-bottom: 2.5rem; font-size: 13px;
+}
+nav a { color: var(--ref); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+section { margin-bottom: 3rem; scroll-margin-top: 1.5rem; }
+h2 {
+  font-size: 19px; font-weight: 500; letter-spacing: -0.015em;
+  padding-bottom: 0.5rem; border-bottom: 1px solid var(--rule); margin-bottom: 1rem;
+}
+h3 { font-size: 14px; font-weight: 500; margin: 1.75rem 0 0.5rem; }
+p { margin-bottom: 0.85rem; }
+p:last-child { margin-bottom: 0; }
+ul { margin: 0 0 0.85rem 1.25rem; }
+li { margin-bottom: 0.4rem; }
+strong { font-weight: 500; }
+em { font-style: italic; color: var(--ink-2); }
+
+code {
+  font-family: var(--mono); font-size: 0.88em;
+  background: var(--sunk); padding: 1px 4px; border-radius: 3px; border: 1px solid var(--rule);
+}
+pre {
+  background: var(--sunk); border: 1px solid var(--rule); border-radius: 7px;
+  padding: 1rem; overflow-x: auto; margin-bottom: 0.85rem;
+}
+pre code { background: none; border: 0; padding: 0; font-size: 12.5px; line-height: 1.7; }
+kbd {
+  font-family: var(--mono); font-size: 0.82em;
+  background: var(--sunk); border: 1px solid var(--rule-2); border-bottom-width: 2px;
+  border-radius: 4px; padding: 1px 5px;
+}
+
+dl { margin-bottom: 0.85rem; }
+dt { font-weight: 500; margin-top: 0.85rem; }
+dt:first-child { margin-top: 0; }
+dd { margin: 0.25rem 0 0 0; color: var(--ink-2); }
+
+.keys { display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1.25rem; align-items: baseline; }
+.keys dt { margin: 0; white-space: nowrap; }
+.keys dd { margin: 0; }
+
+.trouble dt { color: var(--ink); }
+.trouble dd { padding-bottom: 0.5rem; border-bottom: 1px solid var(--rule); }
+.trouble dd:last-child { border-bottom: 0; }
+
+footer {
+  margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+  font-size: 12px; color: var(--ink-3);
+}
+a { color: var(--ref); }
+
+/* v4 help and privacy pages (generated from docs/*.md by scripts/build-docs.mjs). */
+body { max-width: 60rem; }
+main h1 { margin: 0 0 1rem; }
+main h2 { margin-top: 3rem; scroll-margin-top: 1.5rem; }
+main h3, main h4 { scroll-margin-top: 1.5rem; }
+h4 { font-size: 13px; font-weight: 500; margin: 1.25rem 0 0.4rem; }
+ol { margin: 0 0 0.85rem 1.4rem; }
+li > ul, li > ol { margin-top: 0.4rem; margin-bottom: 0.2rem; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+blockquote {
+  border-left: 3px solid var(--amber); background: var(--sunk); padding: 0.6rem 0.9rem;
+  margin: 0 0 0.85rem; color: var(--ink-2); font-size: 14px;
+}
+.table { overflow-x: auto; margin-bottom: 1rem; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: left; vertical-align: top; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--rule); }
+th { font-weight: 500; color: var(--ink-2); border-bottom-color: var(--rule-2); }
+figure { margin: 0.5rem 0 1.5rem; }
+img {
+  display: block; max-width: 100%; height: auto; margin: 0.5rem 0 1rem;
+  border: 1px solid var(--rule-2); border-radius: 6px; box-shadow: 0 1px 3px rgb(0 0 0 / 6%);
+}
+li img { max-width: min(100%, 36rem); }
