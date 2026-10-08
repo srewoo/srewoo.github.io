@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PingMeet - Privacy Policy</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #f8fafc;
+        color: #1a1a2e;
+        line-height: 1.6;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #1a1a2e;
+      }
+
+      .last-updated {
+        font-size: 13px;
+        color: #6b7280;
+        margin-bottom: 32px;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 28px;
+        margin-bottom: 12px;
+        color: #2563eb;
+      }
+
+      p {
+        margin-bottom: 16px;
+        color: #374151;
+      }
+
+      ul {
+        margin: 0 0 16px 24px;
+        color: #374151;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .highlight {
+        background: #dbeafe;
+        padding: 16px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border-left: 4px solid #2563eb;
+      }
+
+      .highlight strong {
+        color: #1e40af;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+      }
+
+      .data-table th,
+      .data-table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .data-table th {
+        background: #f8fafc;
+        font-weight: 600;
+        color: #1a1a2e;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: 600;
+      }
+
+      .badge.local {
+        background: #dcfce7;
+        color: #166534;
+      }
+
+      .badge.optional {
+        background: #fef3c7;
+        color: #92400e;
+      }
+
+      .contact {
+        margin-top: 32px;
+        padding-top: 24px;
+        border-top: 1px solid #e5e7eb;
+      }
+
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        color: #6b7280;
+      }
+
+      .back-link:hover {
+        color: #2563eb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://srewoo.github.io/pingmeet/" class="back-link">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M10 12L6 8l4-4" />
+        </svg>
+        Back to PingMeet
+      </a>
+
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: September 2026</p>
+
+      <div class="highlight">
+        <strong>Your privacy matters.</strong> PingMeet is designed with privacy-first principles.
+        All your data stays in your browser - we don't operate any servers that collect or store
+        your information.
+      </div>
+
+      <h2>Data We Access</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Purpose</th>
+            <th>Storage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Calendar Events</td>
+            <td>Display meetings & send reminders</td>
+            <td><span class="badge local">Local Only</span></td>
+          </tr>
+          <tr>
+            <td>OAuth Tokens</td>
+            <td>Authenticate with Google/Microsoft</td>
+            <td><span class="badge local">Local Only</span></td>
+          </tr>
+          <tr>
+            <td>Email Address</td>
+            <td>Display connected account</td>
+            <td><span class="badge local">Local Only</span></td>
+          </tr>
+          <tr>
+            <td>Meeting Duration</td>
+            <td>Track time in meetings</td>
+            <td><span class="badge local">Local Only</span></td>
+          </tr>
+          <tr>
+            <td>AI API Keys</td>
+            <td>Generate meeting insights &amp; action items</td>
+            <td>
+              <span class="badge local">Local Only</span>
+              <span class="badge optional">Optional</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Meeting Captions</td>
+            <td>Extract action items after a call</td>
+            <td>
+              <span class="badge local">Local, then deleted</span>
+              <span class="badge optional">Opt-in</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Action Items &amp; Recaps</td>
+            <td>Show what you agreed to in past meetings</td>
+            <td>
+              <span class="badge local">Local Only</span>
+              <span class="badge optional">Opt-in</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Data Storage</h2>
+      <p>All data is stored locally in your browser using Chrome's Storage API. This includes:</p>
+      <ul>
+        <li>Your calendar connection settings</li>
+        <li>OAuth tokens for calendar access</li>
+        <li>Reminder preferences</li>
+        <li>Meeting duration statistics</li>
+        <li>AI provider configuration (if enabled)</li>
+        <li>Action items and recaps from meetings you chose to capture (if enabled)</li>
+      </ul>
+      <p>
+        <strong>We do not have servers that store your data.</strong> When you uninstall the
+        extension, all data is automatically deleted.
+      </p>
+
+      <h3>Automatic deletion</h3>
+      <ul>
+        <li>
+          <strong>Caption transcripts are deleted as soon as action items are generated.</strong>
+          If the browser closes mid-call, any leftover transcript is deleted within 6 hours. This
+          happens regardless of your retention setting — raw conversation text is never kept
+          long-term.
+        </li>
+        <li>
+          Action items, recaps, duration history and cached events are deleted after
+          <strong>30 days by default</strong>. You can change this to 7, 30 or 90 days, or to
+          &ldquo;never&rdquo;, in Settings.
+        </li>
+        <li>
+          <strong>Delete all meeting data now</strong> in Settings removes all of the above
+          immediately, stops any capture in progress, and revokes standing capture consent. Your
+          calendar connection and preferences are kept, so you don't have to set the extension up
+          again.
+        </li>
+      </ul>
+
+      <h2>Third-Party Services</h2>
+      <p>
+        PingMeet connects to the following services
+        <strong>only when you explicitly connect your calendars</strong>:
+      </p>
+      <ul>
+        <li><strong>Google Calendar API</strong> - To fetch your Google Calendar events</li>
+        <li><strong>Microsoft Graph API</strong> - To fetch your Outlook Calendar events</li>
+        <li>
+          <strong>AI Providers (Optional)</strong> - OpenAI, Anthropic, Google AI, or a custom
+          endpoint you specify. Only used if you configure an API key. Used for two separate
+          features: meeting insights (titles and times only) and action items (which send caption
+          text &mdash; see below).
+        </li>
+      </ul>
+      <p>
+        Your API key goes directly from your browser to the provider you chose. It never passes
+        through us, because there is no &ldquo;us&rdquo; in the request path &mdash; no PingMeet
+        server is involved.
+      </p>
+
+      <h2>What We DON'T Do</h2>
+      <ul>
+        <li>We don't sell your data</li>
+        <li>We don't share your data with third parties (except AI providers if you opt-in)</li>
+        <li>We don't track your browsing activity</li>
+        <li>We don't show advertisements</li>
+        <li>We don't collect analytics or telemetry</li>
+        <li>
+          We don't access your microphone, camera or audio, and we don't record meetings &mdash; the
+          action items feature reads only the captions already shown on screen
+        </li>
+        <li>We don't keep caption text after action items have been generated</li>
+      </ul>
+
+      <h2 id="ai-insights">AI Insights (Optional Feature)</h2>
+      <p>If you choose to enable AI-powered meeting insights:</p>
+      <ul>
+        <li>Your meeting titles and times may be sent to your chosen AI provider</li>
+        <li>You provide your own API key - we don't have access to it</li>
+        <li>This feature is completely optional and disabled by default</li>
+        <li>You can remove your API key at any time to disable this feature</li>
+      </ul>
+
+      <h2>Meeting Action Items (Optional Feature)</h2>
+      <div class="highlight">
+        <strong>This is the only feature that touches what people actually said.</strong> It is off
+        by default, and turning it on is not enough on its own &mdash; each meeting must also be
+        approved before anything is read.
+      </div>
+      <p>
+        When enabled and approved, PingMeet reads the
+        <strong>captions the meeting itself is already displaying</strong> on Google Meet, Zoom
+        (web) or Microsoft Teams (web), and uses them to extract action items when the call ends.
+      </p>
+
+      <h3>What this feature does</h3>
+      <ul>
+        <li>
+          It reads caption text that is already on screen. It does
+          <strong>not</strong> access your microphone, camera, or audio, and it does not record the
+          meeting. If captions are off, there is nothing to read and nothing is captured.
+        </li>
+        <li>
+          Captions are held in local browser storage only while the call is running, and are
+          <strong>deleted as soon as the action items are generated</strong>.
+        </li>
+        <li>
+          To produce the action items, the caption text
+          <strong>is sent to the AI provider you configured</strong>, using your own API key. This
+          is conversation content, not just meeting titles &mdash; please make sure that is
+          acceptable for your meetings and consistent with your employer's policy. That provider's
+          own privacy policy and data retention terms then apply to that text.
+        </li>
+        <li>
+          Only the resulting action items, decisions and short summary are kept afterwards, subject
+          to the retention window above.
+        </li>
+      </ul>
+
+      <h3>Your controls</h3>
+      <ul>
+        <li>The feature is disabled by default and requires an AI API key to work at all.</li>
+        <li>
+          Each meeting asks for approval first. You can decline with <em>Not now</em>, or opt into
+          <em>capture every meeting</em> if you prefer not to be asked.
+        </li>
+        <li>
+          <strong>You can switch back to being asked at any time</strong> &mdash; see &ldquo;Ask
+          before capturing&rdquo; in Settings. Withdrawing that blanket permission also stops any
+          call that was being captured under it, while leaving meetings you approved individually
+          running.
+        </li>
+        <li>
+          While capture is active, a visible indicator appears in the meeting tab, with a
+          <strong>Stop</strong> button. Stopping revokes approval for that meeting.
+        </li>
+        <li>
+          Turning the setting off, or using <em>Delete all meeting data now</em>, stops any capture
+          already in progress.
+        </li>
+      </ul>
+
+      <h3>Other people in the meeting</h3>
+      <p>
+        Other participants are not notified by PingMeet that you are extracting action items.
+        Recording and note-taking rules differ by jurisdiction, employer, and platform. You are
+        responsible for having whatever consent or disclosure your situation requires.
+      </p>
+
+      <h3>What is not supported</h3>
+      <p>
+        The <strong>desktop apps</strong> for Zoom and Teams cannot be captured &mdash; a browser
+        extension has no visibility into them, and no extension can provide this. Only meetings you
+        join in the browser are eligible.
+      </p>
+
+      <h2>Permissions Explained</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Why We Need It</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>identity</code></td>
+            <td>OAuth authentication with Google/Microsoft</td>
+          </tr>
+          <tr>
+            <td><code>notifications</code></td>
+            <td>Show meeting reminder notifications</td>
+          </tr>
+          <tr>
+            <td><code>alarms</code></td>
+            <td>Schedule reminders at the right time</td>
+          </tr>
+          <tr>
+            <td><code>storage</code></td>
+            <td>Save your settings and calendar data locally</td>
+          </tr>
+          <tr>
+            <td><code>tabs</code></td>
+            <td>Open meeting links when you click "Join"</td>
+          </tr>
+          <tr>
+            <td><code>offscreen</code></td>
+            <td>Play reminder sound in background</td>
+          </tr>
+          <tr>
+            <td><code>downloads</code></td>
+            <td>Export weekly meeting reports</td>
+          </tr>
+          <tr>
+            <td><code>idle</code></td>
+            <td>
+              Detect a locked or idle screen, so a reminder can be made louder when you are least
+              likely to see it. Reports only <em>active / idle / locked</em> &mdash; never what you
+              are doing.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Site access to <code>meet.google.com</code>, <code>zoom.us</code>,
+              <code>teams.microsoft.com</code>
+            </td>
+            <td>
+              Read on-screen captions for action items, and detect that you actually joined. Used
+              only for meetings you approved; nothing is read otherwise.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Google API Services User Data Policy</h2>
+      <p>
+        PingMeet's use and transfer of information received from Google APIs adheres to the
+        <a
+          href="https://developers.google.com/terms/api-services-user-data-policy"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Google API Services User Data Policy</a
+        >, including the Limited Use requirements.
+      </p>
+      <h3>Scopes we request, and why</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Scope</th>
+            <th>Why PingMeet needs it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>calendar.events</code></td>
+            <td>
+              Read your upcoming events so reminders can fire before a meeting starts, and write the
+              two changes you ask for from the popup: creating an event, and declining an
+              invitation.
+            </td>
+          </tr>
+          <tr>
+            <td><code>calendar.calendarlist.readonly</code></td>
+            <td>
+              List the calendars on your account so you can choose which ones PingMeet watches.
+              Reads names only, never event contents.
+            </td>
+          </tr>
+          <tr>
+            <td><code>userinfo.email</code></td>
+            <td>
+              Show which account is connected, so you can tell two accounts apart. Displayed in the
+              extension and never sent anywhere.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Transfers of Google user data</h3>
+      <p>
+        PingMeet operates no servers, so Google Calendar data never reaches infrastructure we
+        control. There is exactly one case in which it leaves your browser: if you turn on the
+        optional <em>AI Insights</em> feature and supply your own API key, event titles, start
+        times, durations and attendee counts for the day are sent from your browser directly to the
+        AI provider you selected, to generate that day's summary. This transfer is off by default,
+        requires a key you provide, and is described in
+        <a href="#ai-insights">AI Insights</a> above. No other Google user data is transferred to
+        any third party, and none of it is used for advertising, sold, or used to train
+        general-purpose models by us.
+      </p>
+      <p>
+        Google user data is never read by a human, except where you explicitly ask us for support,
+        where it is required for security purposes, or to comply with applicable law.
+      </p>
+
+      <h2>Your Rights</h2>
+      <p>You have full control over your data:</p>
+      <ul>
+        <li><strong>Access:</strong> All your data is visible in the extension</li>
+        <li>
+          <strong>Delete:</strong> Use <em>Delete all meeting data now</em> in Settings for an
+          immediate purge, set a retention window of 7/30/90 days, or uninstall to remove
+          everything. Transcripts also have their own <em>Delete all stored transcripts now</em>
+          button.
+        </li>
+        <li>
+          <strong>Withdraw consent:</strong> Turn off caption capture at any time, or press
+          <em>Stop</em> on the indicator inside the meeting
+        </li>
+        <li>
+          <strong>Portability:</strong> Export your meeting reports anytime, and copy any recap's
+          action items as Markdown
+        </li>
+      </ul>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this privacy policy from time to time. Any changes will be reflected in the
+        "Last updated" date above.
+      </p>
+
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>
+          If you have questions about this privacy policy or how PingMeet handles your data, please
+          open an issue on our GitHub repository or contact us at:
+        </p>
+        <p><a href="mailto:srewoo@gmail.com">srewoo@gmail.com</a></p>
+      </div>
+    </div>
+  </body>
+</html>
